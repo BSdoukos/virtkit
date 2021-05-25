@@ -1,0 +1,106 @@
+{
+    "calculator": {
+        "title": "calculadora",
+        "description": "Realize qualquer cálculo, desde os mais simples até os mais complexos.",
+        "class": ["essentials", "finances"],
+        "source": "../images/calculator.jpg"
+    },
+    "checklist": {
+        "title": "checklist",
+        "description": "Faça sua lista de compras, anote suas tarefas e não esqueça de nada.",
+        "class": ["essentials"],
+        "source": "../images/checklist.jpg"
+    },
+    "photos": {
+        "title": "fotos",
+        "description": "Não perca suas memórias. Tire fotos, edite-as e guarde-as com segurança.",
+        "class": ["essentials"],
+        "source": "../images/flower.jpg"
+    },
+    "audioRecorder": {
+        "title": "gravador de áudio",
+        "description": "Grave, edite e escute seus áudios com ferramentas poderosas, mas intuitivas.",
+        "class": ["essentials"],
+        "source": "../images/recorder.jpg"
+    },
+    "notes": {
+        "title": "notas",
+        "description": "Não deixe passar nada. Anote o que quiser num piscar de olhos.",
+        "class": ["essentials"],
+        "source": "../images/notes.jpg"
+    },
+    "pitStop": {
+        "title": "pit-stop",
+        "description": "Descubra pontos de interesse próximos a você, onde quer que esteja.",
+        "class": ["essentials"],
+        "source": "../images/map-location-pin.jpg"
+    },
+    "clock": {
+        "title": "relógio",
+        "description": "Horários, alarmes, timer: pra você não perder a hora nunca.",
+        "class": ["essentials"],
+        "source": "../images/clock.jpg"
+    },
+    "stock": {
+        "title": "bolsa",
+        "description": "Acompanhe o andamento financeiro das principais empresas e moedas no mundo todo.",
+        "class": ["finances"],
+        "source": "../images/stock.jpg"
+    },
+    "budget": {
+        "title": "budget",
+        "description": "Administre seus gastos, faça orçamentos, acompanhe seu progresso financeiro e muito mais.",
+        "class": ["finances"],
+        "source": "../images/money-saving.jpg"
+    },
+    "interestCalculator": {
+        "title": "calculadora de juros",
+        "description": "Calcule facilmente os juros positivos ou negativos dos seus investimentos e transações.",
+        "class": ["finances"],
+        "source": "../images/chart.jpg"
+    },
+    "currencyConverter": {
+        "title": "conversor de moedas",
+        "description": "Converta diversas moedas entre si, com seus valores sempre atualizados",
+        "class": ["finances"],
+        "source": "../images/currencies.jpg"
+    },
+    "textEditor": {
+        "title": "editor de texto",
+        "description": "As melhores ferramentas de edição de texto para produções impecáveis.",
+        "class": ["academic"],
+        "source": "../images/typing.jpg"
+    },
+    "ABNTformatter": {
+        "title": "formatador ABNT",
+        "description": "Formate seus trabalhos nas normas oficiais da ABNT.",
+        "class": ["academic"],
+        "source": "../images/pencil-notebook.jpg"
+    },
+    "scanner": {
+        "title": "scanner",
+        "description": "Escaneie rapidamente seu aparelho e saiba suas informações técnicas.",
+        "class": ["devices"],
+        "source": "../images/laptop-usb.jpg"
+    },
+    "locator": {
+        "title": "localizador",
+        "description": "Perdeu seu aparelho? Localize-o sem demora e tome a ação que desejar.",
+        "class": ["devices"],
+        "source": "../images/cellphone.jpg"
+    },
+    "storageCleaner": {
+        "title": "limpador de memória",
+        "description": "Libere memória em seu aparelho e deixe-o mais rápido e com mais espaço.",
+        "class": ["devices"],
+        "source": "../images/device-speed.jpg"
+    },
+    "taskManager": {
+        "title": "organizador de Tarefas",
+        "description": "Mantenha suas tarefas e compromissos num sistema bem organizado.",
+        "class": [
+          "academic"
+        ],
+        "source": "../images/work-tasks.jpg"
+    }
+}

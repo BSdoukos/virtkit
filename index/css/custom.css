@@ -1,0 +1,333 @@
+/* Sidebar */
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Raleway:wght@400;500&display=swap');
+
+    .sidebar {
+        font-family: 'Raleway', sans-serif;
+        border-right: 1px solid #eeeeee;
+        background-color: white;
+        width: 80%;
+        overflow: auto;
+        box-shadow: 10px 2px 8px rgba(0, 0, 0, 0.205);
+        top: 0;
+        transform: translateX(calc(-100% - 10px));
+        z-index: 1;
+        transition: transform 0.4s;
+    }
+    .sidebar.open {
+        transform: translateX(0);
+    }
+    .sidebar .logo-box {
+        font-family: 'Comfortaa', sans-serif;
+        border-bottom: 1px solid #eeeeee;
+        height: 71px;
+        margin-bottom: 0.95rem;
+    }
+    .sidebar .navbar-brand {
+        font-size: 24px;
+        left: 0.5px;
+    }
+    .sidebar-profile-box {
+        margin-bottom: 0.95rem;
+    }
+    .sidebar-profile-photo {
+        width: 125px;
+        height: 125px;
+    }
+    .sidebar-profile-name {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .sidebar-sign-out-link {
+        font-size: 0.9rem;
+    }
+    .sidebar .nav-item {
+        padding-top: 17.5px;
+        padding-bottom: 17.5px;
+        border-top: 1px solid #eeeeee;
+        font-weight: 500;
+        padding-left: 32.5px;
+    }
+    .sidebar .nav-item:last-of-type.collapsed {
+        border-bottom: 1px solid #eeeeee;
+    }
+    .sidebar .nav-item:focus {
+        border: 1px dotted black;
+    }
+    .sidebar .nav-item:hover, .sidebar .nav-item:hover * {
+        color: #1192e7 !important;
+        background-color: #f6fbff;
+        cursor: pointer;
+    }
+    .sidebar .icon-drawer2 {
+        font-size: 22px;
+        bottom: 3px;
+    }
+    .sidebar .icon-cheveron-down {
+        right: 30px;
+        top: 31.75px;
+        transform: translateY(-50%);
+    }
+    .sidebar .collapse .nav-item:last-of-type {
+        border-bottom: 0;
+    }
+    .sidebar .actions-list {
+        list-style: none;
+        padding: 0;
+        font-size: 18px;
+        height: 11.5vh;
+    }
+    .sidebar .actions-list .action-link:hover {
+        text-decoration: none;
+    }
+    .sidebar .actions-list .action-link:active {
+        color: #1192e7;
+    }
+    .sidebar .copyright-text {
+        font-size: 0.8rem;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .sidebar {
+            box-shadow: none;
+            transform: translateX(0);
+            width: 300px;
+        }
+    }
+/*---------------------------------------------------------------------*/
+
+/* Main content */
+    main, .search-window, .mobile-search-window {
+        background-color: #f7f7f7;
+        font-family: 'Raleway', sans-serif;
+    }
+    .search-window {
+        transition: all 0.2s;
+        padding: 4.35vh 6.25vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .search-window .error-alert.hidden, .mobile-search-window .error-alert.hidden{
+        display: none;
+    }
+    .search-window .icon-spinner2 {
+        font-size: 60px;
+    }
+    .search-window .icon-spinner2.rotating, .mobile-search-window .icon-spinner2.rotating {
+        transition: transform 60s linear;
+        transform: rotateZ(17280deg);
+    }
+    .search-window .card {
+        flex: 0 0 20vw;
+        max-height: 430px;
+        margin-right: 1rem;
+    }
+    .search-window.hidden {
+        opacity: 0;
+    }
+    .mobile-search-window.empty, .search-window.empty {
+        align-items: center;
+        justify-content: center;
+    }
+    .mobile-search-window {
+        position: absolute;
+        top: 70.4px;
+        left: 0;
+        display: flex;
+        height: calc(100vh - 70.4px);
+        overflow: auto;
+        z-index: 1;
+        padding: 50px 12.5%;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .mobile-search-window.hidden {
+        display: none;
+    }
+    .mobile-search-window .no-results-text {
+        text-align: center;
+    }
+    .mobile-search-window .icon-spinner2 {
+        font-size: 45px;
+    }
+    main.hidden {
+        display: none;
+    }
+    main p:not(.card p) {
+        color: #495156;
+    }
+    main .welcome-message {
+        font-size: 23px;
+    }
+    main .container-fluid {
+        padding: 0 12.75%;
+    }
+    main .no-script-alert {
+        display: none;
+    }
+    html.no-js main .no-script-alert {
+        display: initial;
+    }
+    main .no-script-alert .link, .search-window .error-alert .link {
+        color: #856404;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    main .btn {
+        background-color: #1192e7;
+    }
+    main .card {
+        padding: 0;
+        position: relative;
+    }
+    .card .dropleft {
+        cursor: pointer;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+    .card .dropleft .icon-options {
+        padding: 15px 15px 15px 3px;
+        display: block;
+        width: 7px;
+        line-height: 10px;
+    }
+    .card .dropleft .dropdown-item:hover {
+        background-color: #e9ecef;
+    }
+    .card .icon-options::after {
+        content: '•••';
+        color: white;
+    }
+    main .card .btn {
+        width: 37.5%;
+    }
+    main .row {
+        margin: 0;
+    }
+    main .appsection {
+        margin-bottom: 70px;
+        padding: 0;
+        overflow: hidden;
+    }
+    main .custom-section .container {
+        padding: 0;
+    }
+    main .last-section {
+        margin-bottom: 0;
+        padding-bottom: 30px;
+    }
+    main .appsection .card img {
+        height: 47.5vw;
+    }
+    main .appsection .pagination {
+        display: none;
+    }
+    main .subtitle {
+        font-size: 23px;
+    }
+    main .section-info {
+        font-size: 15px;
+    }
+
+    @media only screen and (min-width: 576px) {
+        main .start-section .card {
+            width: 80%;
+        }
+        main .appsection .card{
+            flex: 0 0 48.5%;
+        }
+        main .appsection .card img {
+            height: 22.5vw;
+        }
+    }
+    @media only screen and (min-width: 768px) {
+        .custom-section {
+            width: 45% !important;
+        }
+    }
+    @media only screen and (min-width: 992px) {
+        .custom-section {
+            width: 42%;
+        }
+        main .appsection:not(.custom-section) {
+            width: 100%;    
+        }
+        html.no-js main .appsection .app-slider {
+            overflow: auto;
+        }
+        html.js main .appsection .app-slider {
+            width: 100%;
+            transition: transform 0.7s;
+        }
+        main .appsection .card {
+            flex: 0 0 32.25%;
+            margin-right: 1.5%;
+        }
+        main .appsection .card img {
+            height: 16.25vw;
+        }
+    }
+    @media only screen and (min-width: 1200px) {
+        main, .search-window {
+            width: calc(100vw - 300px);
+            height: calc(100vh - 71.4px);
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            overflow: auto;
+        }
+        main .container-fluid {
+            padding: 0 5% 0 7.5%;
+        }
+        main .user-personal-set {
+            margin-bottom: 80px;
+        }
+        main .start-section {
+            background-color: white;
+            border: 1px solid #eeeeee;
+            padding: 25px 0 45px;
+        }
+        main .start-section .card {
+            border: 1px solid #eeeeee;
+        }
+        main .custom-section {
+            height: 175px;
+            background-color: white;
+            border: 1px solid #eeeeee;
+            padding: 65px;
+        }
+        main .appsection .card img {
+            height: 13vw;
+        }
+        main .appsection .card .btn {
+            width: 43.5%;
+        }
+        html.js main .appsection .pagination {
+            display: flex;
+        }
+    }
+    @media only screen and (min-width: 1500px) {
+        main .appsection .card {
+            flex: 0 0 23.8%;
+        }
+        main .appsection .card img {
+            height: 11vw;
+        }
+        main .appsection .pagination .pageNumberButton:nth-of-type(4) {
+            display: none;
+        }
+    }
+    @media only screen and (min-width: 1700px) {
+        main .appsection .card .btn {
+            width: 35%;
+        }
+        .search-window .card {
+            flex: 0 0 15vw;
+            max-height: 410px;
+        }
+    }
+ 
+/*---------------------------------------------------------------------*/

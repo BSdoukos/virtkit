@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="no-index">
+    <meta name="author" content="Bruno M. B. Sdoukos">
+    <meta name="description" content="Tudo melhor, mais completo e mais prático. Isso é Virtkit.">
+    <meta name="keywords" content="Virtkit, ferramenta, kit, calculadora">
+    <title>App - Virtkit</title>
+    <link rel="stylesheet" href="../icons/style.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../../../../Frameworks/bootstrap-edited/css/bootstrap.min.css">
+</head>
+<body class="h-100">
+    <a href="#maincontent" class="sr-only">Pular para o conteúdo principal</a>
+    <header class="header d-flex align-items-center" id="top">
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-md navbar-light col-12 col-xl-8" role="navigation">
+                    <div class="row w-100 mx-auto">
+                        <div class="dropdown col-1 d-flex d-xl-none justify-content-center align-items-center p-0">
+                            <button class="search-button p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="icon-search brand-blue"><span class="sr-only">Buscar</span></span></button>
+                            <div class="dropdown-menu">
+                                <form class="px-4 py-3">
+                                    <div class="form-group">
+                                        <label for="searchInputSm">Pesquisar um app</label>
+                                        <input type="search" class="form-control" id="searchInputSm" placeholder="Digite o nome do app">
+                                    </div>
+                                        <button type="submit" class="btn btn-primary" id="searchButtonSm">Pesquisar</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="logo d-flex d-xl-none align-items-center justify-content-center mb-0 p-0 col-10 col-md-2"><a href="#" class="navbar-brand d-inline mr-0 d-flex align-items-center px-1 position-relative"><img src="../images/logo.PNG" alt="Logotipo do Virtkit"></a></div>
+                        <button class="menu-button d-md-none p-0 col-1 brand-blue">
+                            <span class="icon-menu"></span>
+                            <span class="sr-only">Menu</span>
+                        </button>
+                        <ul class="navbar-nav d-none d-md-flex col-9 col-xl-12 p-0">
+                            <li class="nav-item mx-4">
+                                <a href="#" class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item mx-4">
+                                <a href="#" class="nav-link">Página principal</a>
+                            </li>
+                            <li class="nav-item mx-4">
+                                <a href="#" class="nav-link">Configurações</a>
+                            </li>
+                            <li class="nav-item mx-4">
+                                <a href="#" class="nav-link">Sair</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <form action="#" class="form-inline d-none d-xl-flex col-xl-4 p-0" role="search">
+                    <input type="search" class="form-control p-3" id="searchInputLg" name="search" placeholder="Pesquisar um app">
+                    <button type="submit" class="search-button ml-2" id="searchButtonLg"><span class="icon-search text-secondary"><span class="sr-only">Buscar</span></span></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar no-script-menu" role="navigation">
+        <ul class="navbar-nav text-center mx-auto">
+            <li class="nav-item mx-4">
+                <a href="#" class="nav-link brand-blue">Início</a>
+            </li>
+            <li class="nav-item mx-4">
+                <a href="#" class="nav-link brand-blue">Página principal</a>
+            </li>
+            <li class="nav-item mx-4">
+                <a href="#" class="nav-link brand-blue">Configurações</a>
+            </li>
+            <li class="nav-item mx-4">
+                <a href="#" class="nav-link brand-blue">Sair</a>
+            </li>
+        </ul>
+    </nav>
+    <aside class="sidebar h-100 px-0 position-fixed" role="complementary">
+        <div class="logo-box d-flex align-items-center justify-content-center mb-xl-4">
+            <div class="logo d-flex align-items-center"><a href="#" class="navbar-brand mx-auto position-relative"><img src="../images/logo.PNG" alt="Logotipo do Virtkit"></a></div>
+        </div>
+        <div class="sidebar-profile-box text-center mb-xl-4">
+            <img src="https://cdn.pixabay.com/photo/2019/12/05/08/33/girl-4674545_960_720.jpg" alt="Sua foto de perfil" class="sidebar-profile-photo rounded-circle mb-4">
+            <h1 class="sidebar-profile-name mb-1">April Hills</h1>
+            <a href="#" class="sidebar-sign-out-link text-secondary">Ver meu perfil</a>
+        </div>
+        <ul class="nav flex-column accordion" id="accordionExample" aria-live="polite">
+            <li class="nav-item text-secondary pl-0 position-relative" role="button" tabindex="0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <span class="icon-drawer2 ml-4 mr-3"></span>
+                Dia-a-dia
+                <span class="icon-cheveron-down position-absolute"></span>
+            </li>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <ul class="nav flex-column pl-0">
+                    <li class="nav-item text-secondary pl-4" tabindex="0">Calculadora</li>
+                    <li class="nav-item text-secondary pl-4" tabindex="0">Checklist</li>
+                </ul>
+            </div>
+            <li class="nav-item text-secondary pl-0 position-relative" role="button" tabindex="0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <span class="icon-drawer2 ml-4 mr-3"></span>
+                Finanças
+                <span class="icon-cheveron-down position-absolute"></span>
+            </li>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <ul class="nav flex-column pl-0">
+                    <li class="nav-item text-secondary pl-4" tabindex="0">Calculadora</li>
+                    <li class="nav-item text-secondary pl-4" tabindex="0">Checklist</li>
+                </ul>
+            </div>
+            <li class="nav-item text-secondary pl-0 position-relative" role="button" tabindex="0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <span class="icon-drawer2 ml-4 mr-3"></span>
+                Acadêmico
+                <span class="icon-cheveron-down position-absolute"></span>
+            </li>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <ul class="nav flex-column pl-0">
+                    <li class="nav-item text-secondary pl-4" tabindex="0">Calculadora</li>
+                    <li class="nav-item text-secondary pl-4" tabindex="0">Checklist</li>
+                </ul>
+            </div>
+            <li class="nav-item text-secondary pl-0 position-relative collapsed" role="button" tabindex="0" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <span class="icon-drawer2 ml-4 mr-3"></span>
+                Meus dispositivos
+                <span class="icon-cheveron-down position-absolute"></span>
+            </li>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <ul class="nav flex-column pl-0">
+                    <li class="nav-item text-secondary pl-4" tabindex="0">Calculadora</li>
+                    <li class="nav-item text-secondary pl-4" tabindex="0">Checklist</li>
+                </ul>
+            </div>
+        </ul>
+        <nav role="navigation">
+            <ul class="actions-list mb-0 d-flex d-md-none justify-content-center align-items-center">
+                <li class="mx-2">
+                    <a href="#" class="action-link text-secondary">
+                        <span class="icon-home"></span>
+                        <span class="sr-only">Início</span>
+                    </a>
+                </li>
+                <li class="mx-2">
+                    <a href="#" class="action-link text-secondary">
+                        <span class="icon-earth"></span>
+                        <span class="sr-only">Página principal do Virtkit</span>
+                    </a>
+                </li>
+                <li class="mx-2">
+                    <a href="#" class="action-link text-secondary">
+                        <span class="icon-cog"></span>
+                        <span class="sr-only">Configurações</span>
+                    </a>
+                </li>
+                <li class="mx-2">
+                    <a href="#" class="action-link text-secondary">
+                        <span class="icon-exit"></span>
+                        <span class="sr-only">Sair da conta</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <p class="copyright-text text-secondary text-center position-absolute w-100 d-none d-md-block">Copyright &copy; Virtkit 2020</p>
+    </aside>
+    <main class="pt-4" id="maincontent">
+        <div class="container-fluid">
+            <div class="alert alert-warning no-script-alert" role="alert">
+                Houve um problema no carregamento de arquivos da página. Algumas funções do app podem deixar de funcionar ou estar funcionando de maneira diferente. <a href="#" class="link">Entenda melhor</a>
+            </div>
+            <div class="row user-personal-set">
+                <section class="start-section mt-md-3 mx-auto mx-xl-0 col-xl-5 px-0">
+                    <h1 class="welcome-message text-center brand-blue-dark">Bom dia, April!</h1>
+                    <p class="text-center mt-3">Talvez você esteja procurando por...</p>
+                    <div class="card mx-sm-auto">
+                        <img class="card-img-top" src="../images/calculator.jpg/" alt="Calculadora">
+                        <div class="card-body">
+                            <h2 class="card-title h5">Calculadora</h2>
+                            <p class="card-text">Realize qualquer cálculo, desde os mais simples até os mais complexos.</p>
+                            <a href="#" class="btn btn-primary">Abrir</a>
+                        </div>
+                    </div>
+                </section>
+                <p class="text-center my-5 d-xl-none w-100">ou então...</p>
+                <div class="custom-box d-md-flex justify-content-center mx-auto mt-xl-3 col-xl-6 align-items-xl-center px-0">
+                    <div class="row justify-content-md-between">
+                        <section class="favorites-section appsection custom-section col-xl-12 d-xl-flex align-items-xl-center">
+                            <div class="container">
+                                <h1 class="subtitle brand-blue-dark h4 text-xl-center">Favoritos</h1>
+                                <p class="section-info text-center mt-3">Você ainda não adicionou nenhum app favorito.</p>
+                                <button class="btn btn-primary d-block mx-auto mt-3">Adicionar</button>
+                                <div class="row overflow justify-content-sm-between justify-content-lg-start flex-lg-nowrap app-slider empty" role="slider">
+                                </div>
+                            </div>
+                        </section>
+                        <section class="recents-section appsection custom-section col-xl-12 d-xl-flex align-items-xl-center">
+                            <div class="container">
+                                <h1 class="subtitle brand-blue-dark h4 text-xl-center">Recentes</h1>
+                                <p class="section-info text-center mt-3">Você não utilizou nenhum app recentemente.</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <section class="essentials-section appsection position-relative">
+                <h1 class="subtitle brand-blue-dark h4 mb-0">Dia-a-dia</h1>
+                <p class="section-info my-3">Os apps essenciais, para o que der e vier.</p>
+                <div class="row overflow justify-content-sm-between justify-content-lg-start flex-lg-nowrap app-slider" role="slider">
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../images/calculator.jpg" alt="Calculadora">
+                        <div class="dropleft options">
+                            <span class="icon-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"></span>
+                            <div class="dropdown-menu p-0">
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Adicionar aos favoritos</button>
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Informações</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title h5">Calculadora</h2>
+                            <p class="card-text">Realize qualquer cálculo, desde os mais simples até os mais complexos.</p>
+                            <a href="#" class="btn btn-primary">Abrir</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../images/checklist.jpg" alt="Lista de controle">
+                        <div class="dropleft options">
+                            <span class="icon-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"></span>
+                            <div class="dropdown-menu p-0">
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Adicionar aos favoritos</button>
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Informações</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title h5">Checklist</h2>
+                            <p class="card-text">Faça sua lista de compras, anote suas tarefas e não esqueça de nada.</p>
+                            <a href="#" class="btn btn-primary">Abrir</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../images/flower.jpg" alt="Foto de flor">
+                        <div class="dropleft options">
+                            <span class="icon-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"></span>
+                            <div class="dropdown-menu p-0">
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Adicionar aos favoritos</button>
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Informações</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title h5">Fotos</h2>
+                            <p class="card-text">Não perca suas memórias. Tire fotos, edite-as e guarde-as com segurança.</p>
+                            <a href="#" class="btn btn-primary">Abrir</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../images/recorder.jpg" alt="Microfone">
+                        <div class="dropleft options">
+                            <span class="icon-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"></span>
+                            <div class="dropdown-menu p-0">
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Adicionar aos favoritos</button>
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Informações</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title h5">Gravador de áudio</h2>
+                            <p class="card-text">Grave, edite e escute seus áudios com ferramentas poderosas, mas intuitivas.</p>
+                            <a href="#" class="btn btn-primary">Abrir</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../images/notes.jpg" alt="Bloco de notas">
+                        <div class="dropleft options">
+                            <span class="icon-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"></span>
+                            <div class="dropdown-menu p-0">
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Adicionar aos favoritos</button>
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Informações</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title h5">Notas</h2>
+                            <p class="card-text">Não deixe passar nada. Anote o que quiser num piscar de olhos.</p>
+                            <a href="#" class="btn btn-primary">Abrir</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../images/map-location-pin.jpg" alt="Mapa com taxinha marcando localização">
+                        <div class="dropleft options">
+                            <span class="icon-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"></span>
+                            <div class="dropdown-menu p-0">
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Adicionar aos favoritos</button>
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Informações</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title h5">Pit-stop</h2>
+                            <p class="card-text">Descubra pontos de interesse próximos a você, onde quer que esteja.</p>
+                            <a href="#" class="btn btn-primary">Abrir</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../images/clock.jpg" alt="Relógio">
+                        <div class="dropleft options">
+                            <span class="icon-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"></span>
+                            <div class="dropdown-menu p-0">
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Adicionar aos favoritos</button>
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Informações</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title h5">Relógio</h2>
+                            <p class="card-text">Horários, alarmes, timer: pra você não perder a hora nunca.</p>
+                            <a href="#" class="btn btn-primary">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item" id="previousAppPageButton">
+                      <a class="page-link brand-blue" href="#" aria-label="Anterior" role="button">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Anterior</span>
+                      </a>
+                    </li>
+                    <li class="page-item pageNumberButton"><a class="page-link brand-blue" href="#" role="button">1</a></li>
+                    <li class="page-item pageNumberButton"><a class="page-link brand-blue" href="#" role="button">2</a></li>
+                    <li class="page-item pageNumberButton"><a class="page-link brand-blue" href="#" role="button">3</a></li>
+                    <li class="page-item" id="nextAppPageButton">
+                      <a class="page-link brand-blue" href="#" aria-label="Próximo" role="button">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Próximo</span>
+                      </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="finances-section appsection">
+                <h1 class="subtitle brand-blue-dark h4 mb-0">Finanças</h1>
+                <p class="section-info my-3">Tudo o que você precisa para organizar seu dinheiro.</p>
+                <div class="row overflow justify-content-sm-between justify-content-lg-start flex-lg-nowrap app-slider">
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../images/stock.jpg" alt="Interface digital da bolsa de valores">
+                        <div class="dropleft options">
+                            <span class="icon-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"></span>
+                            <div class="dropdown-menu p-0">
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Adicionar aos favoritos</button>
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Informações</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title h5">Bolsa</h2>
+                            <p class="card-text">Acompanhe o andamento financeiro das principais empresas e moedas no mundo todo.</p>
+                            <a href="#" class="btn btn-primary">Abrir</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../images/money-saving.jpg" alt="Plantas crescendo em montes de moedas">
+                        <div class="dropleft options">
+                            <span class="icon-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"></span>
+                            <div class="dropdown-menu p-0">
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Adicionar aos favoritos</button>
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Informações</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title h5">Budget</h2>
+                            <p class="card-text">Administre seus gastos, faça orçamentos, acompanhe seu progresso financeiro e muito mais.</p>
+                            <a href="#" class="btn btn-primary">Abrir</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../images/calculator.jpg" alt="Calculadora">
+                        <div class="dropleft options">
+                            <span class="icon-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"></span>
+                            <div class="dropdown-menu p-0">
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Adicionar aos favoritos</button>
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Informações</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title h5">Calculadora</h2>
+                            <p class="card-text">Realize qualquer cálculo, desde os mais simples até os mais complexos.</p>
+                            <a href="#" class="btn btn-primary">Abrir</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../images/chart.jpg" alt="Papéis contendo relatórios financeiros">
+                        <div class="dropleft options">
+                            <span class="icon-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"></span>
+                            <div class="dropdown-menu p-0">
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Adicionar aos favoritos</button>
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Informações</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title h5">Calculadora de juros</h2>
+                            <p class="card-text">Calcule facilmente os juros positivos ou negativos dos seus investimentos e transações.</p>
+                            <a href="#" class="btn btn-primary">Abrir</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../images/currencies.jpg" alt="Notas de diversas nacionalidades">
+                        <div class="dropleft options">
+                            <span class="icon-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"></span>
+                            <div class="dropdown-menu p-0">
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Adicionar aos favoritos</button>
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Informações</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title h5">Conversor de moedas</h2>
+                            <p class="card-text">Converta diversas moedas entre si, com seus valores sempre atualizados.</p>
+                            <a href="#" class="btn btn-primary">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item" id="previousAppPageButton">
+                      <a class="page-link brand-blue" href="#" aria-label="Anterior">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Anterior</span>
+                      </a>
+                    </li>
+                    <li class="page-item pageNumberButton"><a class="page-link brand-blue" href="#">1</a></li>
+                    <li class="page-item pageNumberButton"><a class="page-link brand-blue" href="#">2</a></li>
+                    <li class="page-item" id="nextAppPageButton">
+                      <a class="page-link brand-blue" href="#" aria-label="Próximo">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Próximo</span>
+                      </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="academic-section appsection">
+                <h1 class="subtitle brand-blue-dark h4 mb-0">Acadêmico</h1>
+                <p class="section-info my-3">Execute perfeitamente seus trabalhos acadêmicos.</p>
+                <div class="row justify-content-sm-between justify-content-lg-start flex-lg-nowrap">
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../images/typing.jpg" alt="Mãos digitando">
+                        <div class="dropleft options">
+                            <span class="icon-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"></span>
+                            <div class="dropdown-menu p-0">
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Adicionar aos favoritos</button>
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Informações</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title h5">Editor de texto</h2>
+                            <p class="card-text">As melhores ferramentas de edição de texto para produções impecáveis.</p>
+                            <a href="#" class="btn btn-primary">Abrir</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../images/pencil-notebook.jpg" alt="Lápis e régua sobre um caderno">
+                        <div class="dropleft options">
+                            <span class="icon-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"></span>
+                            <div class="dropdown-menu p-0">
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Adicionar aos favoritos</button>
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Informações</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title h5">Formatador ABNT</h2>
+                            <p class="card-text">Formate seus trabalhos nas normas oficiais da ABNT.</p>
+                            <a href="#" class="btn btn-primary">Abrir</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../images/work-tasks.jpg" alt="Caderneta, pasta, relógio e sapatos executivos">
+                        <div class="dropleft options">
+                            <span class="icon-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"></span>
+                            <div class="dropdown-menu p-0">
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Adicionar aos favoritos</button>
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Informações</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title h5">Organizador de tarefas</h2>
+                            <p class="card-text">Mantenha suas tarefas e compromissos num sistema bem organizado.</p>
+                            <a href="#" class="btn btn-primary">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="devices-section appsection last-section">
+                <h1 class="subtitle brand-blue-dark h4 mb-0">Meus dispositivos</h1>
+                <p class="section-info my-3">Tenha controle sobre seus dispositivos e fique seguro ao navegar na internet.</p>
+                <div class="row justify-content-sm-between justify-content-lg-start flex-lg-nowrap">
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../images/laptop-usb.jpg" alt="Mapa com taxinha marcando localização">
+                        <div class="dropleft options">
+                            <span class="icon-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"></span>
+                            <div class="dropdown-menu p-0">
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Adicionar aos favoritos</button>
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Informações</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title h5">Scanner</h2>
+                            <p class="card-text">Escaneie rapidamente seu aparelho e saiba suas informações técnicas.</p>
+                            <a href="#" class="btn btn-primary">Abrir</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../images/cellphone.jpg" alt="Mapa com taxinha marcando localização">
+                        <div class="dropleft options">
+                            <span class="icon-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"></span>
+                            <div class="dropdown-menu p-0">
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Adicionar aos favoritos</button>
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Informações</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title h5">Localizador</h2>
+                            <p class="card-text">Perdeu seu aparelho? Localize-o sem demora e tome a ação que desejar.</p>
+                            <a href="#" class="btn btn-primary">Abrir</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../images/device-speed.jpg" alt="Mapa com taxinha marcando localização">
+                        <div class="dropleft options">
+                            <span class="icon-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"></span>
+                            <div class="dropdown-menu p-0">
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Adicionar aos favoritos</button>
+                                <button class="dropdown-item py-2 px-3 rounded favorites-button" type="button">Informações</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title h5">Limpador de memória</h2>
+                            <p class="card-text">Libere memória em seu aparelho e deixe-o mais rápido e com mais espaço.</p>
+                            <a href="#" class="btn btn-primary">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center pb-5 pb-xl-4">
+                <p class="text-secondary">Isso é tudo (por enquanto)</p>
+                <a href="#top" class="btn btn-primary d-xl-none" role="button">Voltar ao topo</a>
+            </div>
+        </div>
+    </main>
+    <div class="search-window hidden empty d-none d-xl-flex" id="searchWindow" style="z-index: -1;">
+        <div class="alert alert-warning error-alert hidden" role="alert">
+            Houve um problema na solicitação de dados ao servidor. Iremos continuar tentando, mas os resultados ficarão indisponíveis enquanto isso. <a href="#" class="link">Entenda melhor</a>
+        </div>
+        <span class="icon-spinner2 text-secondary"></span>
+        <p class="no-results-text text-secondary">Não foi encontrado nenhum app que corresponda à sua pesquisa.</p>
+    </div>
+    <div class="mobile-search-window hidden empty" id="mobileSearchWindow">
+        <div class="alert alert-warning error-alert hidden" role="alert">
+            Houve um problema na solicitação de dados ao servidor. Iremos continuar tentando, mas os resultados ficarão indisponíveis enquanto isso. <a href="#" class="link">Entenda melhor</a>
+        </div>
+        <span class="icon-spinner2 text-secondary"></span>
+        <p class="no-results-text-mobile text-secondary">Não foi encontrado nenhum app que corresponda à sua pesquisa.</p>
+    </div>
+    <footer class="footer d-flex d-xl-none align-items-center justify-content-center">
+        <p class="text-secondary mb-0">Copyright &copy; Virtkit 2020</p>
+    </footer> 
+    <script src="../../../../Frameworks/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="../../../../Frameworks/bootstrap-edited/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/search-mobile.js"></script>
+    <script src="../js/appGrouping.js"></script>
+    <script src="../js/appSlider.js"></script>
+</html>

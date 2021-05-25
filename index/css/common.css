@@ -1,0 +1,33 @@
+.brand-blue {
+    color: #1192e7 !important;
+}
+.brand-blue-light {
+    color: #6db2e0 !important;
+}
+.brand-blue-dark {
+    color: #469dd6 !important;
+}
+
+html {
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+body.no-scroll {
+    overflow: hidden;
+}
+button {
+    background-color: transparent;
+    border: none;
+}
+html .no-script-menu {
+    border-bottom: 1px solid #eeeeee;
+}
+html.js .no-script-menu {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    html.no-js .no-script-menu {
+        display: none;
+    }
+}

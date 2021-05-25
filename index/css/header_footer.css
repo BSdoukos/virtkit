@@ -1,0 +1,36 @@
+.header {
+    height: 71.4px;
+    border-bottom: 1px solid #eeeeee;
+}
+.header .search-button, .header .menu-button, .header .dropdown-search-button {
+    font-size: 20px;
+}
+.header .dropdown-menu .form-group > * {
+    width: 200px;
+}
+.header .dropdown-menu .btn {
+    background-color: #1192e7;
+}
+.header .navbar-brand {
+    left: 0.5px;
+}
+.header .form-control[name="search"] {
+    height: 30px;
+    border-radius: 20px;
+}
+.header .form-inline .icon-search {
+    font-size: 18px;
+}
+.footer {
+    height: 70.4px;
+    border-top: 1px solid #eeeeee;
+    background-color: #f7f7f7;
+}
+
+@media only screen and (min-width: 1200px) {
+    .header {
+        width: calc(100% - 300px);  
+        position: absolute;
+        right: 0;
+    }
+}
